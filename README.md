@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Assessment: Seismic Landing Page
 
-## Getting Started
+A responsive landing page built with Next.js and Tailwind CSS, developed as part of a technical assessment.
 
-First, run the development server:
+## �️ Technical Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Styling**: [Tailwind CSS 4.0](https://tailwindcss.com/) (using `@tailwindcss/postcss`)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Components**: Functional React components with a focus on reusability and clean structure.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Setup Instructions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Install Dependencies**:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   yarn install
+   ```
 
-## Learn More
+2. **Run Development Server**:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   yarn dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   The site will be available at `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Build for Production**:
+   ```bash
+   yarn build
+   yarn start
+   ```
 
-## Deploy on Vercel
+## � Implementation Highlights
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Component-Driven Architecture**: The page is broken down into logical sections (Hero, How It Works, FAQs, etc.) located in `app/components/`.
+- **Responsive Design**: Implemented a fluid layout that adapts across mobile, tablet, and desktop breakpoints.
+- **Tailwind 4 Integration**: Leveraged the latest Tailwind major version for styling, utilizing the new CSS-first configuration approach.
+- **Asset Optimization**: Used Next.js `Image` component for efficient image loading and layout stability.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Key Assumptions & Decisions
+
+1. **Static Data**: For the scope of this assessment, section content (like FAQ items and Store lists) is managed via local constants within components to simplify the architecture while maintaining clear separation of concerns.
+2. **Design Fidelity**: Prioritized matching the provided layout and typography as closely as possible using modern CSS practices.
+3. **Accessibility**: Used semantic HTML elements (`<main>`, `<section>`, `<h1>`-`<h6>`, `<button>`) to ensure basic accessibility compliance.
+4. **Performance**: Chose Next.js for its built-in optimizations (SSR/RSC) to ensure fast initial page loads, critical for landing pages.
+5. **Asset Management**: Image assets are logically grouped within `app/assets/images` and exported via barrel files (`index.ts`). This approach provides:
+   - **Type Safety**: TypeScript ensures that all imported images exist.
+   - **Autocomplete**: Better developer experience when selecting assets.
+   - **Centralization**: Easier management and tracking of all project images.
