@@ -3,17 +3,17 @@ import Badge from "./ui/Badge";
 
 export default function WhoIsThisFor() {
   return (
-    <section className="py-24 bg-[#F7F7F7] overflow-hidden">
+    <section className="py-12 bg-[#F7F7F7] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <div className="mb-6 flex justify-center">
             <Badge>Built for You</Badge>
           </div>
-          <h2 className="text-2xl md:text-2xl font-medium text-[#181818] mb-4 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-medium text-[#181818] mb-4 leading-tight">
             Who Is This For?
           </h2>
-          <p className="text-base md:text-lg text-[#717171] max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-[#717171] max-w-[470px] mx-auto">
             Designed for Nigerians who shop internationally and want reliable
             delivery back home.
           </p>

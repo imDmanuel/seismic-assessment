@@ -67,7 +67,7 @@ function HighlightCard({ highlight }: { highlight: (typeof highlights)[0] }) {
 
 export default function PlatformHighlights() {
   return (
-    <section className="py-24 overflow-hidden bg-[#F7F7F7]">
+    <section className="py-12 overflow-hidden bg-[#F7F7F7]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="mb-6 flex justify-center">

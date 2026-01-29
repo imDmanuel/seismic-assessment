@@ -3,7 +3,7 @@ import Button from "./ui/Button";
 
 export default function StartShipping() {
   return (
-    <section className="py-24 bg-[#F7F7F7] overflow-hidden">
+    <section className="py-12 bg-[#F7F7F7] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-[124px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}

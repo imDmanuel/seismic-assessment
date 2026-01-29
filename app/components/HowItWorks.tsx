@@ -3,10 +3,10 @@ import Badge from "./ui/Badge";
 export default function HowItWorks() {
   return (
     <section
-      className="relative w-full py-24 overflow-hidden leading-tight"
+      className="relative w-full py-12 overflow-hidden leading-tight"
       style={{
         backgroundImage:
-          'radial-gradient(circle, #F7F7F700 0%, #F7F7F7 50%), url("/images/how-it-works-bg.jpg")',
+          'radial-gradient(circle, #F7F7F700 0%, #F7F7F7 40%), url("/images/how-it-works-bg.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -28,7 +28,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Steps Container */}
-        <div className="relative w-full max-w-[1000px] mx-auto pb-24">
+        <div className="relative w-full max-w-[1000px] mx-auto">
           {/* Desktop Dual-Grid Layout */}
           <div className="hidden md:flex flex-col">
             {/* Block 1: Steps 1 & 2 */}

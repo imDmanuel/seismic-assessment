@@ -28,7 +28,7 @@ const faqs = [
 
 export default function FAQs() {
   return (
-    <section className="py-24 bg-[#F7F7F7] overflow-hidden">
+    <section className="py-12 bg-[#F7F7F7] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
