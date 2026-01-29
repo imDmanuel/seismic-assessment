@@ -1,15 +1,23 @@
 import Image from "next/image";
 import Badge from "./ui/Badge";
+import {
+  AdidasLogo,
+  ChanelLogo,
+  NikeLogo,
+  AmazonLogo,
+  EbayLogo,
+  NorthFaceLogo,
+} from "../assets/images";
 
 const stores = [
-  { name: "adidas", logo: "/images/addidas.png" },
-  { name: "chanel", logo: "/images/chanel.png" },
-  { name: "nike", logo: "/images/nike.png" },
-  { name: "chanel-duplicate", logo: "/images/chanel.png" },
-  { name: "amazon", logo: "/images/amazon.png" },
-  { name: "ebay", logo: "/images/ebay.png" },
-  { name: "the-north-face", logo: "/images/the-northern-face.png" },
-  { name: "amazon-duplicate", logo: "/images/amazon.png" },
+  { name: "adidas", logo: AdidasLogo },
+  { name: "chanel", logo: ChanelLogo },
+  { name: "nike", logo: NikeLogo },
+  { name: "chanel-duplicate", logo: ChanelLogo },
+  { name: "amazon", logo: AmazonLogo },
+  { name: "ebay", logo: EbayLogo },
+  { name: "the-north-face", logo: NorthFaceLogo },
+  { name: "amazon-duplicate", logo: AmazonLogo },
 ];
 
 export default function TopStores() {

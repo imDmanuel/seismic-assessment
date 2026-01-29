@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./ui/Button";
+import { Featured1, Featured2, Featured3 } from "../assets/images";
 
 export default function StartShipping() {
   return (
@@ -29,7 +30,7 @@ export default function StartShipping() {
             {/* Top Featured Image */}
             <div className="col-span-2 rounded-[32px] overflow-hidden relative border border-[#D7D7D7]">
               <Image
-                src="/images/start-shipping/featured-1.png"
+                src={Featured1}
                 alt="Shipping process 1"
                 width={620}
                 height={248}
@@ -41,7 +42,7 @@ export default function StartShipping() {
             {/* Bottom Left Image */}
             <div className="rounded-[32px] overflow-hidden border border-[#D7D7D7]">
               <Image
-                src="/images/start-shipping/featured-2.png"
+                src={Featured2}
                 alt="Shipping process 2"
                 width={298}
                 height={248}
@@ -53,7 +54,7 @@ export default function StartShipping() {
             {/* Bottom Right Image */}
             <div className="rounded-[32px] overflow-hidden border border-[#D7D7D7]">
               <Image
-                src="/images/start-shipping/featured-3.png"
+                src={Featured3}
                 alt="Shipping process 3"
                 width={298}
                 height={248}

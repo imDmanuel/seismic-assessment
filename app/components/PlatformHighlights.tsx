@@ -1,40 +1,48 @@
 import Image from "next/image";
 import Badge from "./ui/Badge";
+import {
+  PackageReceiving,
+  ParcelConsolidation,
+  ShippingCostCalculator,
+  RealtimeTracking,
+  AssistedPurchase,
+  OrderNotifications,
+} from "../assets/images";
 
 const highlights = [
   {
     title: "Package Receiving",
     description:
       "We receive your international orders at our overseas warehouse.",
-    image: "/images/highlights-illustrations/package-receiving.png",
+    image: PackageReceiving,
   },
   {
     title: "Parcel Consolidation",
     description:
       "Combine multiple packages into one shipment to reduce shipping costs.",
-    image: "/images/highlights-illustrations/parcel-consolidation.png",
+    image: ParcelConsolidation,
   },
   {
     title: "Shipping Cost Calculator",
     description: "See your shipping cost before paying. No surprises.",
-    image: "/images/highlights-illustrations/shipping-cost-calculator.png",
+    image: ShippingCostCalculator,
   },
   {
     title: "Real-Time Tracking",
     description: "Track your package from warehouse to delivery in Nigeria.",
-    image: "/images/highlights-illustrations/realtime-tracking.png",
+    image: RealtimeTracking,
   },
   {
     title: "Assisted Purchase",
     description:
       "If a store doesn't accept your card, share the product link and we'll help you buy it.",
-    image: "/images/highlights-illustrations/assisted-purchase.png",
+    image: AssistedPurchase,
   },
   {
     title: "Order Notifications",
     description:
       "Get updates when your package arrives, ships, and is delivered.",
-    image: "/images/highlights-illustrations/order-notifications.png",
+    image: OrderNotifications,
   },
 ];
 
@@ -81,7 +89,7 @@ export default function PlatformHighlights() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {highlights.map((highlight, index) => (
             <HighlightCard key={index} highlight={highlight} />
           ))}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Badge from "./ui/Badge";
+import { EverydayShoppers, SmallBusiness } from "../assets/images";
 
 export default function WhoIsThisFor() {
   return (
@@ -33,7 +34,7 @@ export default function WhoIsThisFor() {
             </div>
             <div className="relative w-full aspect-[1.3/1] rounded-bl-3xl overflow-hidden">
               <Image
-                src="/images/who-its-for/smal-business-featured.png"
+                src={SmallBusiness}
                 alt="Small Business Owners"
                 fill
                 className="object-cover object-top"
@@ -47,7 +48,7 @@ export default function WhoIsThisFor() {
             <div className="bg-white rounded-[32px] border border-[#F2F4F7] flex flex-col overflow-hidden shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)]">
               <div className="relative w-full aspect-[1.3/1] rounded-tr-3xl overflow-hidden">
                 <Image
-                  src="/images/who-its-for/everyday-shoppers-featured.png"
+                  src={EverydayShoppers}
                   alt="Everyday Shoppers"
                   fill
                   className="object-cover object-top"

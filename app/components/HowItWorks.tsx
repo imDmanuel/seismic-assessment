@@ -1,12 +1,18 @@
 import Badge from "./ui/Badge";
+import {
+  HowItWorksBg,
+  OneTwoConnector,
+  TwoThreeConnector,
+  ThreeFourConnector,
+} from "../assets/images";
+import Image from "next/image";
 
 export default function HowItWorks() {
   return (
     <section
       className="relative w-full py-12 overflow-hidden leading-tight"
       style={{
-        backgroundImage:
-          'radial-gradient(circle, #F7F7F700 0%, #F7F7F7 40%), url("/images/how-it-works-bg.jpg")',
+        backgroundImage: `radial-gradient(circle, #F7F7F700 0%, #F7F7F7 40%), url("${HowItWorksBg.src}")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -46,8 +52,8 @@ export default function HowItWorks() {
               {/* Connector 1-2 (Skewed) */}
               <div className="col-start-2 row-start-1 row-span-2 relative pointer-events-none">
                 <div className="absolute top-[200px] left-0 w-full">
-                  <img
-                    src="/images/one-two-connector.svg"
+                  <Image
+                    src={OneTwoConnector}
                     alt=""
                     className="w-full object-fill"
                   />
@@ -69,8 +75,8 @@ export default function HowItWorks() {
             <div className="grid grid-cols-[1fr_minmax(100px,180px)_1fr] relative z-0">
               <div className="col-start-3 flex justify-center relative h-[100px]">
                 <div className="h-[100px]">
-                  <img
-                    src="/images/two-three-connector.svg"
+                  <Image
+                    src={TwoThreeConnector}
                     alt=""
                     className="h-full w-auto"
                   />
@@ -93,8 +99,8 @@ export default function HowItWorks() {
               {/* Connector 3-4 (Skewed) */}
               <div className="col-start-2 row-start-1 row-span-2 relative pointer-events-none">
                 <div className="absolute top-[200px] left-0 w-full">
-                  <img
-                    src="/images/three-four-connector.svg"
+                  <Image
+                    src={ThreeFourConnector}
                     alt=""
                     className="w-full object-fill"
                   />
@@ -212,11 +218,7 @@ function StepCardMobile({
 function MobileConnector() {
   return (
     <div className="flex justify-center h-16 pointer-events-none z-0">
-      <img
-        src="/images/two-three-connector.svg"
-        alt=""
-        className="h-full w-auto"
-      />
+      <Image src={TwoThreeConnector} alt="" className="h-full w-auto" />
     </div>
   );
 }

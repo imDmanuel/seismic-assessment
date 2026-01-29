@@ -1,23 +1,29 @@
 import Image from "next/image";
+import {
+  GlobalIcon,
+  HouseIcon,
+  GroupIcon,
+  ShieldSearchIcon,
+} from "../assets/images";
 
 const services = [
   {
-    icon: "/images/who-its-for/global.svg",
+    icon: GlobalIcon,
     title: "Shop Globally",
     description: "Buy from US and other international stores.",
   },
   {
-    icon: "/images/who-its-for/house-2.svg",
+    icon: HouseIcon,
     title: "Overseas Warehouse",
     description: "We receive and process your items securely.",
   },
   {
-    icon: "/images/who-its-for/group.svg",
+    icon: GroupIcon,
     title: "Delivered to Nigeria",
     description: "Your package arrives at your chosen Nigerian address.",
   },
   {
-    icon: "/images/who-its-for/shield-search.svg",
+    icon: ShieldSearchIcon,
     title: "Transparent & Secure",
     description: "Clear costs, real tracking, safe payments.",
   },

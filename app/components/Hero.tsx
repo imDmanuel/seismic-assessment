@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "./ui/Button";
 import Badge from "./ui/Badge";
+import { HeroMain } from "../assets/images";
 
 export default function Hero() {
   return (
@@ -20,7 +21,7 @@ export default function Hero() {
         {/* Image Section */}
         <div className="relative w-full max-w-5xl mb-6 px-4">
           <Image
-            src="/images/hero-image.png"
+            src={HeroMain}
             alt="International shopping items"
             width={1200}
             height={300}
