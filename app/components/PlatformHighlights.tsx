@@ -48,7 +48,7 @@ const highlights = [
 
 function HighlightCard({ highlight }: { highlight: (typeof highlights)[0] }) {
   return (
-    <div className="bg-white rounded-[32px] border border-[#F2F4F7] flex flex-col h-full overflow-hidden shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)]">
+    <div className="max-sm:max-w-[405px] max-sm:mx-auto bg-white rounded-[32px] border border-[#F2F4F7] flex flex-col h-full overflow-hidden shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)]">
       <div className="flex items-center justify-center overflow-hidden">
         <div className="w-full h-full transform hover:scale-105 transition-transform duration-500">
           <Image
